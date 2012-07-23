@@ -28,6 +28,8 @@ function create(window) {
   window.jQuery.noConflict();
   return window.jQuery;
 }
-module.exports = create('undefined' === typeof window ? undefined : window);
-module.exports.create = create;
+if (typeof module !== 'undefined') {
+    module.exports = create('undefined' === typeof window ? undefined : window);
+    module.exports.create = create;
+}
 }());

@@ -31,5 +31,7 @@ function create(window) {
 if (typeof module !== 'undefined') {
     module.exports = create('undefined' === typeof window ? undefined : window);
     module.exports.create = create;
+} else {
+    create('undefined' === typeof window ? undefined : window);
 }
 }());

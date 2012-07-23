@@ -1,0 +1,10 @@
+{
+    "paths": {
+        ".":  "./jquery"
+    },
+    "shim": {
+        ".": {
+            "exports": "window.jQuery"
+        }
+    }
+}

@@ -26,7 +26,8 @@
     "node": ">=0.6"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "install": "cp lib/node-jquery.js src/jquery.js"
   },
   "dependencies": {
     "jsdom": "~0.2.14",
@@ -43,5 +44,8 @@
     "util",
     "dom",
     "jquery"
-  ]
+  ],
+  "csi": {
+    "name": "jquery"
+  }
 }
